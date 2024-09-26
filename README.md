@@ -10,7 +10,22 @@ A lightweight and portable tool that allows users to resize images to a size of 
 - Saves resized images with custom filenames.
 - Portable executable file for easy distribution and use on machines without Python installed.
 
-## Requirements
+## For Regular Users (Just Run the .exe)
+
+If you're a regular user and don't want to deal with technical details, you can simply download the `.exe` file and run it. No need to install Python or any other software.
+
+### Steps
+
+1. **Download** the `.exe` file from the provided link.
+2. **Double-click** on the `.exe` file to launch the Image Resizer Tool.
+3. Select the image you want to resize and choose the destination where you want to save the resized image.
+4. The tool will automatically resize the image to be 4.9 MB or smaller.
+
+That's it! You're ready to resize your images without any setup or installation.
+
+---
+
+## Requirements (For Developers)
 
 - **Python 3.x** (for development and running the script before creating the executable)
 - **Libraries**:
@@ -23,43 +38,38 @@ Install the required libraries via pip:
 pip install pillow tkinter PySimpleGUI
 ```
 
-## Installation
+## Installation (For Developers)
 
 To use the Python script:
 
-Clone the repository:
+1. Clone the repository:
+        ```bash
+        git clone https://github.com/yourusername/image-resizer-tool.git
+        ```
 
-```bash
-git clone https://github.com/yourusername/image-resizer-tool.git
-```
+2. Install dependencies:
+        ```bash
+        pip install -r requirements.txt
+        ```
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the script:
-
-```bash
-python image_resizer.py
-```
+3. Run the script:
+        ```bash
+        python image_resizer.py
+        ```
 
 If you want to create a standalone executable from the Python script, follow the instructions below.
 
-### Create Standalone Executable (Windows)
+## Create Standalone Executable (Windows)
 
-Install PyInstaller:
+1. Install PyInstaller:
+        ```bash
+        pip install pyinstaller
+        ```
 
-```bash
-pip install pyinstaller
-```
-
-Generate the Executable:
-
-```bash
-pyinstaller --onefile --noconsole image_resizer.py
-```
+2. Generate the Executable:
+        ```bash
+        pyinstaller --onefile --noconsole image_resizer.py
+        ```
 
 The executable will be created in the `dist` folder. You can run the `.exe` file directly on any Windows machine without needing to install Python or any libraries.
 
@@ -83,15 +93,3 @@ Feel free to open issues or submit pull requests if you find any bugs or have su
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-### Explanation of Sections:
-
-- **Features**: Highlights the core functionality of your tool.
-- **Requirements**: Lists the libraries and tools needed to run the script.
-- **Installation**: Step-by-step guide on how to install and run the script, including instructions on creating an executable with PyInstaller.
-- **Usage**: Provides details on how to use the tool once installed or downloaded.
-- **Example**: Demonstrates a typical use case for better understanding.
-- **Contributing**: Invites contributions from other developers.
-- **License**: Specifies the license under which your project is shared.
-
-Feel free to customize this template to your liking and add any specific details about your tool.
